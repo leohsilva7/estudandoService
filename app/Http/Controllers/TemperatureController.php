@@ -59,7 +59,7 @@ class TemperatureController extends Controller
             return response()->json([
                 'message' => 'Temperatura adicionada com sucesso!',
                 'temperature' => $newTemperature
-            ]);
+            ],201);
         }
         catch (\Exception $ex){
             return response()->json([
@@ -132,6 +132,6 @@ class TemperatureController extends Controller
         }
         return response()->json([
             'message' => 'Temperatura Deletada com Sucesso!',
-        ],200);
+        ],204);
     }
 }

@@ -17,4 +17,7 @@ class Temperature extends Model
     protected $hidden = [
         'created_at',
     ];
+    protected $casts = [
+        'updated_at' => 'datetime',
+    ];
 }
